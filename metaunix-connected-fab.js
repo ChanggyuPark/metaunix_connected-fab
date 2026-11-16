@@ -42,6 +42,13 @@ function init(){
  function selectTab(b){tabs.forEach(t=>{const on=t===b;t.setAttribute('aria-selected',String(on));t.tabIndex=on?0:-1;const panel=root.querySelector('#path-'+t.dataset.path);if(panel)panel.hidden=!on;});}
  tabs.forEach((b,i)=>{b.addEventListener('click',()=>selectTab(b));b.addEventListener('keydown',e=>{if(['ArrowRight','ArrowLeft','Home','End'].includes(e.key)){e.preventDefault();const n=e.key==='Home'?0:e.key==='End'?tabs.length-1:(i+(e.key==='ArrowRight'?1:-1)+tabs.length)%tabs.length;selectTab(tabs[n]);tabs[n].focus();}});});if(tabs.length)selectTab(tabs[0]);
  root.querySelectorAll('[data-mail]').forEach(a=>{const guide=a.dataset.mail==='guide';const subject=guide?'Connected FAB 가이드북 신청':'Connected FAB 워크플로우 상담';const body=guide?'안녕하세요. 가이드북을 신청합니다.\n\n회사명: \n담당 공정(장비/모듈/FAB/Hook-up): \n회신 이메일: \n관심 업무: ':'안녕하세요. 크로스 인더스트리 워크플로우 상담을 요청합니다.\n\n회사명: \n담당 공정: \n현재 사용 소프트웨어: \n가장 불편한 인계/수정 업무: \n적용 희망 시점: \n회신 연락처: ';a.href='mailto:yckim@metaunix.co.kr?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);});
+ // Connect all consultation CTAs to the Monday form in a new tab.
+ root.querySelectorAll('a[href="#consult"], a[data-mail="consult"]').forEach(a=>{
+  a.href='https://wkf.ms/4eNym5w';
+  a.target='_blank';a.rel='noopener noreferrer';a.setAttribute('data-utm-form','');
+ });
+ const consultNote=root.querySelector('#consult .cta-note');
+ if(consultNote)consultNote.textContent='상담 신청 버튼을 누르면 신청 폼이 새 탭으로 열립니다.';
  // Only external application form anchors need URL-based UTM forwarding. mailto/tel/hash anchors remain untouched.
  root.querySelectorAll('a[href^="http"]').forEach(a=>{if(a.hasAttribute('data-utm-form'))a.href=addUTM(a.href);});
 }
