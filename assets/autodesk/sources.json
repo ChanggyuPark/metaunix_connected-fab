@@ -1,0 +1,34 @@
+{
+  "inventor": {
+    "url": "https://images.ctfassets.net/v7wr16nrr0mz/1MF1FfEPRRgh52vfF66HKL/bfb41f0db39a0fa691f5f743c47957d8/inventor-simplified-product-icon.svg",
+    "bytes": 1497
+  },
+  "fusion": {
+    "url": "https://images.ctfassets.net/v7wr16nrr0mz/2me5fhb2uScpZruOvoAZon/a3dd47a0b238826fb2757a7057b9a74d/fusion-simplified-product-icon.svg",
+    "bytes": 1490
+  },
+  "revit": {
+    "url": "https://images.ctfassets.net/v7wr16nrr0mz/5uc07vrWqPrU2gDDXH91eu/5af79d54d3541249919a511f4dbefbda/revit-product-icon.svg",
+    "bytes": 2006
+  },
+  "forma": {
+    "url": "https://images.ctfassets.net/v7wr16nrr0mz/5ITjAfqVQyXOklkukIjmPH/a30cfd5516c6aaf9caae0608b43ff09e/forma-product-icon.svg",
+    "bytes": 765
+  },
+  "autocad": {
+    "url": "https://images.ctfassets.net/v7wr16nrr0mz/4pb9NWDZYuB1TmVIwrWkIZ/24c1f1d3b03127b9edbd0d5e18200650/autocad-product-icon.svg",
+    "bytes": 2214
+  },
+  "navisworks": {
+    "url": "https://images.ctfassets.net/v7wr16nrr0mz/6PH61YvRGNcnAxhgvt2hKt/422b53ceac29fbf2712cb329bf1ed729/navisworks-manage-full-product-icon.svg",
+    "bytes": 1417
+  },
+  "vault": {
+    "url": "https://images.ctfassets.net/v7wr16nrr0mz/4QGn8UDudbGcpScWbegX1o/ac5e2405e5697dbe6d8a3313e78b6061/vault-professional-simplified-product-icon.svg",
+    "bytes": 1295
+  },
+  "fdu": {
+    "url": "https://images.ctfassets.net/v7wr16nrr0mz/7egqiGwGDgBr2ndACUe6B9/fc759f6d049e13fabc312289177b9597/factory-design-utilities-simplified-product-icon.svg",
+    "bytes": 1483
+  }
+}
