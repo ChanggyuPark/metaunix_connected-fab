@@ -33,6 +33,9 @@ function init(){
  if(active&&root&&hiddenPage===page)return;
  restore();
  root=document.createElement('div');root.id=ROOT_ID;root.innerHTML=CONTENT;
+ // Assets are hosted in this GitHub Pages project, not on the Sixshop domain.
+ const ASSET_BASE='https://changgyupark.github.io/metaunix_connected-fab/';
+ root.querySelectorAll('[src^="assets/"]').forEach(el=>{el.setAttribute('src',new URL(el.getAttribute('src'),ASSET_BASE).href);});
  page.parentNode.insertBefore(root,page);
  page.dataset.cfabOldDisplay=page.style.display;page.style.display='none';hiddenPage=page;active=true;
  const tabs=Array.from(root.querySelectorAll('[data-path]'));
